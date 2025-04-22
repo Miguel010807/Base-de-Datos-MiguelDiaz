@@ -1,5 +1,6 @@
 Actividad 1
-    SELECT f.title, address, city, country  FROM film f
+    SELECT f.title, a.address, c.city, co.country
+    FROM film f
     INNER JOIN inventory i
     ON f.film_id = i.film_id
     INNER JOIN store s
@@ -23,4 +24,26 @@ Actividad 2
     --WHERE length BETWEEN 60 AND 120 (esta parte es mas corta pero se pueden usar las 2 formas, de esta fila o la forma de abajo)
     WHERE length >=60 AND length <=120
 
+--"AS" es para renombrar los nombres en la TABLA 
 Actvidad 3
+    SELECT s.first_name AS Nombre, s.last_name AS Apellido, ad.address AS Dirección, c.city AS Ciudad, co.country AS Pais
+    FROM staff s
+    INNER JOIN address ad
+    ON s.address_id = ad.address_id
+    INNER JOIN city c
+    ON ad.city_id = c.city_id
+    INNER JOIN country co
+    ON c.country_id = co.country_id
+
+Actividad 4
+    SELECT f.title AS Titulo, min(r.return_date),max(r.return_date) 
+    FROM film f
+    INNER JOIN inventory i
+    ON f.film_id = i.film_id
+    INNER JOIN rental r
+    ON i.inventory_id = r.inventory_id
+
+Actividad 5
+
+
+
