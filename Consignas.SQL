@@ -45,5 +45,6 @@ Actividad 4
 
 Actividad 5
 
+    En el SQL Sakila si se puede juntar todas las tablas
 
 
