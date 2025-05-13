@@ -47,4 +47,39 @@ Actividad 5
 
     En el SQL Sakila si se puede juntar todas las tablas
 
+Actividad 6
+    SELECT COUNT(f.film_id),rating
+    FROM film f 
+    GROUP BY rating
+
+Actividad 7
+    SELECT COUNT(f.film_id), c.name AS Categoria
+    FROM film f 
+    INNER JOIN film_category fi
+    ON f.film_id = fi.film_id
+    INNER JOIN category c
+    ON fi.category_id = c.category_id
+    GROUP BY fi.category_id
+Actividad 8
+    SELECT COUNT(f.film_id) AS Peliculas, a.first_name AS Nombre, a.last_name AS Apellido
+    FROM film f
+    INNER JOIN film_actor fi
+    ON f.film_id = fi.film_id
+    INNER JOIN actor a
+    ON fi.actor_id = a.actor_id
+    GROUP BY f.film_id
+    ORDER BY Peliculas DESC
+
+Actividad 9
+
+
+
+Actividad 10
+Actividad 11
+Actividad 12
+Actividad 13
+Actividad 14
+
+
+
 
