@@ -71,13 +71,21 @@ Actividad 8
     ORDER BY Peliculas DESC
 
 Actividad 9
-
+    
 
 
 Actividad 10
+
+
 Actividad 11
+
+
 Actividad 12
+
+
 Actividad 13
+
+
 Actividad 14
 
 
